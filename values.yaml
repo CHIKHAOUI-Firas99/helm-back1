@@ -18,7 +18,7 @@ configmap:
 ########################################## Image ############################################################
 
 image:
-  repository: firaschikhaoui/test-backv4
+  repository: firaschikhaoui/test-backv5
   tag: latest
 
   
