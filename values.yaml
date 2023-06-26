@@ -1,16 +1,16 @@
 ######################################## Application ########################################################
 
-appName: backhelm
-namespace: argoapp
+appName: usermanagment-helm
+namespace: helm-test
 
 ######################################### configmap #########################################################
 
 configmap:
-  name: fastapi-configtest
+  name: fastapi-helm-config
                                   ######### mysql ###########                              
   mysql:
     user: root
-    ip: mysql.default
+    ip: mysql-istio.app-istio
     port: 3306
     password: 1234
     dbname: pfedb
@@ -18,7 +18,5 @@ configmap:
 ########################################## Image ############################################################
 
 image:
-  repository: firaschikhaoui/test-backv4
-  tag: latest
-
-  
+  repository: firaschikhaoui/usermanagment
+  tag: v1
