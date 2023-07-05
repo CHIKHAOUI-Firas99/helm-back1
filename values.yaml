@@ -8,7 +8,7 @@ namespace: app-istio
 configmap:
   name: fastapi-helm-config
                                   ######### mysql ###########  
-  analyseNotificationServiceUrl: http://10.96.227.86:31853                                                              
+  analyseNotificationServiceUrl: notifications-helm.app-istio                                                              
   mysql:
     user: root
     ip: mysql-istio.app-istio
