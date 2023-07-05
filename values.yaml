@@ -7,7 +7,8 @@ namespace: helm-test
 
 configmap:
   name: fastapi-helm-config
-                                  ######### mysql ###########                              
+                                  ######### mysql ###########  
+  analyseNotificationServiceUrl: http://10.96.227.86:31853                                                              
   mysql:
     user: root
     ip: mysql-istio.app-istio
